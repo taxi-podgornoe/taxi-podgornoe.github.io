@@ -250,7 +250,7 @@ async function loadPrices() {
 
   try {
     // Добавляем ?v=timestamp чтобы браузер не кешировал старый файл
-    const res = await fetch('prices.csv?v=' + Date.now());
+    const res = await fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vT2PTSQg9jMMw_iwszjJbBlYV5GB1jTIesHuHigPTE9TnmjAeA9ss9wfMbq3mgEPM7pklfi1nUnFkbp/pub?output=csv&v=' + Date.now());
     if (!res.ok) throw new Error('Файл не найден');
     const text = await res.text();
 
