@@ -118,10 +118,10 @@
   }
   .btn--max:hover { background: #0420b8; border-color: #0420b8; }
   .nav__logo img {
-    height: 32px;
+    height: 48px;
     width: auto;
     vertical-align: middle;
-    margin-right: 6px;
+    margin-right: 8px;
   }
   .btn--lg {
     font-size: 1.15rem;
@@ -145,7 +145,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 60px;
+    height: 72px;
     gap: 16px;
   }
   .nav__logo {
@@ -341,6 +341,12 @@
     width: 40%;
   }
   .data-table tr:last-child td { border-bottom: none; }
+  @media (max-width: 600px) {
+    .data-table td:first-child { white-space: normal; width: auto; }
+    .data-table tr { display: flex; flex-direction: column; padding: 10px 0; border-bottom: 1px solid var(--grey-m); }
+    .data-table tr:last-child { border-bottom: none; }
+    .data-table td { border-bottom: none; padding: 2px 0; }
+  }
 
   /* ── DOCS LIST ── */
   .docs-list { list-style: none; margin-top: 24px; display: flex; flex-direction: column; gap: 12px; }
@@ -626,16 +632,6 @@
       <div class="step">
         <div style="position:relative; flex-shrink:0;">
           <div class="step__num">3</div>
-          <div class="step__line"></div>
-        </div>
-        <div class="step__body">
-          <div class="step__title">Подача автомобиля</div>
-          <div class="step__desc">Водитель прибывает по указанному адресу. Об ожидаемом времени подачи вас уведомят.</div>
-        </div>
-      </div>
-      <div class="step">
-        <div style="position:relative; flex-shrink:0;">
-          <div class="step__num">4</div>
           <div class="step__line"></div>
         </div>
         <div class="step__body">
